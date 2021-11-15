@@ -1,4 +1,4 @@
-import { Application } from "https://deno.land/x/oak/mod.ts";
+import { Application, helpers } from "https://deno.land/x/oak/mod.ts";
 
 const wasmCode = await Deno.readFile("adder.wasm");
 const wasmModule = new WebAssembly.Module(wasmCode);
